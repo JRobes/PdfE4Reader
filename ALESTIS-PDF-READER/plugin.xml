@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="ALESTIS-PDF-READER"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/ALESTIS-PDF-READER/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="ALESTIS-PDF-READER">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="platform:/plugin/ALESTIS-PDF-READER/prefs/plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="com.opcoach.e4.preferences.e4PreferencePages">
+      <page
+            class="com.alestis.pdfreader.preferences.PDFReaderPreferences"
+            id="ALESTIS-PDF-READER.page1"
+            name="PDF Preferences">
+      </page>
+   </extension>
+
+</plugin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="es.robes.imageloader.service">
+   <implementation class="es.robes.imageloader.ImageLoaderImpl"/>
+   <service>
+      <provide interface="es.robes.imageloader.IImageLoader"/>
+   </service>
+</scr:component>

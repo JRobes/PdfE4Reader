@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="__SrqUOt0EeWPq-9ySsZfaw" elementId="org.eclipse.e4.ide.application" bindingContexts="__SrqWet0EeWPq-9ySsZfaw">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="__SrqUet0EeWPq-9ySsZfaw" label="ALESTIS-PDF-READER" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="__SsRdOt0EeWPq-9ySsZfaw">
+      <children xsi:type="advanced:Perspective" xmi:id="__SsRdet0EeWPq-9ySsZfaw">
+        <children xsi:type="basic:PartSashContainer" xmi:id="__SsRdut0EeWPq-9ySsZfaw" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="__SsRd-t0EeWPq-9ySsZfaw" elementId="alestis-pdf-reader.partstack.pdf-navigator">
+            <tags>NoAutoCollapse</tags>
+            <children xsi:type="basic:Part" xmi:id="__SsReOt0EeWPq-9ySsZfaw" contributionURI="bundleclass://ALESTIS-PDF-READER/com.alestis.pdfreader.navigators.PDFFileBrowserPart" label="PDF Folder" iconURI="platform:/plugin/ALESTIS-PDF-READER/icons/pdf_documents.png"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_p42wkOt1EeWPq-9ySsZfaw" elementId="alestis-pdf-reader.partstack.pdf">
+            <tags>NoAutoCollapse</tags>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="__SsRbet0EeWPq-9ySsZfaw" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="__SsRbut0EeWPq-9ySsZfaw" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="__SsRb-t0EeWPq-9ySsZfaw" label="Open" iconURI="platform:/plugin/ALESTIS-PDF-READER/icons/sample.png" command="__SsRZOt0EeWPq-9ySsZfaw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="__SsRcOt0EeWPq-9ySsZfaw" label="Save" iconURI="platform:/plugin/ALESTIS-PDF-READER/icons/save_edit.png" command="__SsRZ-t0EeWPq-9ySsZfaw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="__SsRcet0EeWPq-9ySsZfaw" label="Quit" command="__SsRYOt0EeWPq-9ySsZfaw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_y_kfoOuEEeWPq-9ySsZfaw" elementId="alestis-pdf-reader.menu.configuration" label="Configuration">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_2FGtMOuEEeWPq-9ySsZfaw" elementId="alestis-pdf-reader.handledmenuitem.preferences" label="Preferences" iconURI="platform:/plugin/ALESTIS-PDF-READER/icons/Categories-preferences-system-icon.png" command="_xH0JQOuDEeWPq-9ySsZfaw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="__SsRcut0EeWPq-9ySsZfaw" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="__SsRc-t0EeWPq-9ySsZfaw" label="About" command="__SsRaut0EeWPq-9ySsZfaw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="__SsReet0EeWPq-9ySsZfaw">
+      <children xsi:type="menu:ToolBar" xmi:id="__SsReut0EeWPq-9ySsZfaw" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="__SsRe-t0EeWPq-9ySsZfaw" iconURI="platform:/plugin/ALESTIS-PDF-READER/icons/sample.png" command="__SsRZOt0EeWPq-9ySsZfaw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__SsRfOt0EeWPq-9ySsZfaw" iconURI="platform:/plugin/ALESTIS-PDF-READER/icons/save_edit.png" command="__SsRZ-t0EeWPq-9ySsZfaw"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="__SsRYet0EeWPq-9ySsZfaw" elementId="ALESTIS-PDF-READER.handler.quitCommand" contributionURI="bundleclass://ALESTIS-PDF-READER/com.alestis.pdfreader.handlers.QuitHandler" command="__SsRYOt0EeWPq-9ySsZfaw"/>
+  <handlers xmi:id="__SsRZet0EeWPq-9ySsZfaw" elementId="ALESTIS-PDF-READER.handler.openCommand" contributionURI="bundleclass://ALESTIS-PDF-READER/com.alestis.pdfreader.handlers.OpenHandler" command="__SsRZOt0EeWPq-9ySsZfaw"/>
+  <handlers xmi:id="__SsRaOt0EeWPq-9ySsZfaw" elementId="ALESTIS-PDF-READER.handler.saveCommand" contributionURI="bundleclass://ALESTIS-PDF-READER/com.alestis.pdfreader.handlers.SaveHandler" command="__SsRZ-t0EeWPq-9ySsZfaw"/>
+  <handlers xmi:id="__SsRa-t0EeWPq-9ySsZfaw" elementId="ALESTIS-PDF-READER.handler.aboutCommand" contributionURI="bundleclass://ALESTIS-PDF-READER/com.alestis.pdfreader.handlers.AboutHandler" command="__SsRaut0EeWPq-9ySsZfaw"/>
+  <handlers xmi:id="_oo1mMOxREeW9KoQ-svU7CQ" elementId="alestis-pdf-reader.handler.0" contributionURI="bundleclass://com.opcoach.e4.preferences/com.opcoach.e4.preferences.handlers.E4PreferencesHandler" command="_xH0JQOuDEeWPq-9ySsZfaw"/>
+  <bindingTables xmi:id="__SsRYut0EeWPq-9ySsZfaw" bindingContext="__SrqWet0EeWPq-9ySsZfaw">
+    <bindings xmi:id="__SsRY-t0EeWPq-9ySsZfaw" keySequence="M1+Q" command="__SsRYOt0EeWPq-9ySsZfaw"/>
+    <bindings xmi:id="__SsRZut0EeWPq-9ySsZfaw" keySequence="M1+O" command="__SsRZOt0EeWPq-9ySsZfaw"/>
+    <bindings xmi:id="__SsRaet0EeWPq-9ySsZfaw" keySequence="M1+S" command="__SsRZ-t0EeWPq-9ySsZfaw"/>
+    <bindings xmi:id="__SsRbOt0EeWPq-9ySsZfaw" keySequence="M1+A" command="__SsRaut0EeWPq-9ySsZfaw"/>
+  </bindingTables>
+  <rootContext xmi:id="__SrqWet0EeWPq-9ySsZfaw" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="__SrqWut0EeWPq-9ySsZfaw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="__SrqW-t0EeWPq-9ySsZfaw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <descriptors xmi:id="_h55OMAh6EeayZpAoYuYM0A" elementId="alestis-pdf-reader.partdescriptor.pdfeditor" iconURI="platform:/plugin/ALESTIS-PDF-READER/icons/pdf.png" closeable="true" contributionURI="bundleclass://ALESTIS-PDF-READER/de.vonloesch.pdf4eclipse.e4.editors.PDFEditor"/>
+  <commands xmi:id="__SsRYOt0EeWPq-9ySsZfaw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="__SsRZOt0EeWPq-9ySsZfaw" elementId="ALESTIS-PDF-READER.open" commandName="openCommand"/>
+  <commands xmi:id="__SsRZ-t0EeWPq-9ySsZfaw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="__SsRaut0EeWPq-9ySsZfaw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_xH0JQOuDEeWPq-9ySsZfaw" elementId="org.eclipse.ui.window.preferences" commandName="preferencesCommand"/>
+  <addons xmi:id="__SrqUut0EeWPq-9ySsZfaw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="__SrqU-t0EeWPq-9ySsZfaw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="__SrqVOt0EeWPq-9ySsZfaw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="__SrqVet0EeWPq-9ySsZfaw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="__SrqVut0EeWPq-9ySsZfaw" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="__SrqV-t0EeWPq-9ySsZfaw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="__SrqWOt0EeWPq-9ySsZfaw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
