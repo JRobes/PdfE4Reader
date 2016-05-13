@@ -390,7 +390,8 @@ public class PDFPageViewer extends Canvas implements PaintListener{
             // draw it centered within the panel
             offx = (sz.x - imwid) / 2;
             offy = (sz.y - imhgt) / 2;
-
+            System.out.println("sz.x:\t"+sz.x+"\t"+"sz.y:\t"+sz.y+"\t"+"imwid:\t"+imwid+"\t"+"imhgt:\t"+imhgt);
+            System.out.println("event.x:\t"+event.x+"\tevent.y:\t"+event.y+"\tevent.width;\t"+event.width+"\tevent.height;\t"+event.height);
             if ((imwid == sz.x && imhgt <= sz.y) ||
                     (imhgt == sz.y && imwid <= sz.x)) {
             	
