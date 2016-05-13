@@ -15,10 +15,6 @@
                name="appName"
                value="ALESTIS-PDF-READER">
          </property>
-         <property
-               name="preferenceCustomization"
-               value="platform:/plugin/ALESTIS-PDF-READER/prefs/plugin_customization.ini">
-         </property>
       </product>
    </extension>
    <extension
